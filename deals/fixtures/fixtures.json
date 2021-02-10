@@ -1,0 +1,46 @@
+[
+  {
+    "model": "deals.deal",
+    "pk": "694a1d5e-45ca-44d5-962d-fc74d2b3ca96",
+    "fields": {
+      "customer": 2,
+      "item": 1,
+      "quantity": 1,
+      "total": 13,
+      "date": "2021-02-10T13:33:03.110Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "93189396-4f9f-4591-9bb7-a23c754cb30f",
+    "fields": {
+      "customer": 3,
+      "item": 1,
+      "quantity": 3,
+      "total": 131,
+      "date": "2021-02-10T13:32:50.464Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "a0ae0b7b-abc4-4feb-aa19-f15911e19cd1",
+    "fields": {
+      "customer": 3,
+      "item": 1,
+      "quantity": 1,
+      "total": 13113,
+      "date": "2021-02-10T13:32:24.892Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "da3b1d8e-a2b3-4a8a-a7c0-5bfe76614ab8",
+    "fields": {
+      "customer": 2,
+      "item": 1,
+      "quantity": 1,
+      "total": 131,
+      "date": "2021-02-10T13:32:38.208Z"
+    }
+  }
+]

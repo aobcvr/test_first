@@ -1,0 +1,9 @@
+[
+  {
+    "model": "items.item",
+    "pk": 1,
+    "fields": {
+      "name": "Камень"
+    }
+  }
+]

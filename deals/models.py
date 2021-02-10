@@ -8,10 +8,14 @@ class Deal(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     customer = models.ForeignKey(
         'clients.Client', verbose_name=_('Клиент'), on_delete=models.CASCADE,
+        related_name='deals',
     )
     item = models.ForeignKey(
         'items.Item', verbose_name=_('Наименование товара'),
         on_delete=models.CASCADE,
+    )
+    quantity = models.PositiveIntegerField(
+        _('Количество товара, шт'), default=1,
     )
     total = models.PositiveIntegerField(
         _('Сумма сделки'),

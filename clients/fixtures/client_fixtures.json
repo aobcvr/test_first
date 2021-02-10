@@ -1,0 +1,59 @@
+[
+  {
+    "model": "clients.client",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$dwbZjsD8NFRX$Rsjn/qbGgg1wI2l+Tqzk8ejN+R/x6cU245+Pvf76TeU=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-02-10T12:10:04Z",
+      "username": "John Brown",
+      "spent_money": 31313,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$2SlqodMfKWMH$adUHroTtKqDpZz53oIcyjMZSP2P9fluAa/r+X9d7A9I=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-02-10T13:30:43Z",
+      "username": "Beach Jo",
+      "spent_money": 3131,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.client",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$LtTnchvGzoOV$ScKuskJ3UiW19Hfs0N6hw0jFuEHucE61bGMA/bb48wc=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-02-10T13:31:05.448Z",
+      "username": "Nick John",
+      "spent_money": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
