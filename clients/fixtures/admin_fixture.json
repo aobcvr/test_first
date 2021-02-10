@@ -1,0 +1,21 @@
+[
+  {
+    "model": "clients.client",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$SHeN4ShPGuz2$rQkoYgJv/Sm8O8zBYnkwqP0q2NtLyRHvzTQQwaDJ6w0=",
+      "last_login": "2021-02-10T07:08:15.151Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@mail.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-02-10T07:08:04.629Z",
+      "username": "admin",
+      "spent_money": 0,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
