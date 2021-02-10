@@ -15,11 +15,17 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='deal',
             name='quantity',
-            field=models.PositiveIntegerField(default=1, verbose_name='Количество товара, шт'),
+            field=models.PositiveIntegerField(
+                default=1, verbose_name='Количество товара, шт'
+            ),
         ),
         migrations.AlterField(
             model_name='deal',
             name='customer',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='deals', to=settings.AUTH_USER_MODEL, verbose_name='Клиент'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='deals', to=settings.AUTH_USER_MODEL,
+                verbose_name='Клиент'
+            ),
         ),
     ]
