@@ -2,6 +2,7 @@ import uuid
 
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.core.validators import MinValueValidator
 
 
 class Deal(models.Model):
@@ -17,11 +18,12 @@ class Deal(models.Model):
     quantity = models.PositiveIntegerField(
         _('Количество товара, шт'), default=1,
     )
-    total = models.PositiveIntegerField(
+    total = models.FloatField(
         _('Сумма сделки'),
+        validators=[MinValueValidator(0)],
     )
     date = models.DateTimeField(
-        _("Дата и время регистрации сделки"), auto_now=True,
+        _("Дата и время регистрации сделки"), auto_now_add=True,
     )
 
     class Meta:

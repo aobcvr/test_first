@@ -20,27 +20,30 @@ class Client(AbstractUser):
         verbose_name_plural = _('Клиенты')
 
     def get_top_clients():
-        return Client.objects.all().order_by('-spent_money')[:5]
+        """
+            Топ 5 клиентов, потративших наибольшую сумму за весь период
+        """
+        return Client.objects.exclude(spent_money__lte=0) \
+            .order_by('-spent_money')[:5]
 
     @property
     def get_gems(self):
-        """Список общих купленных камней с хотя-бы одним покупателем.
-
-        Desc:
+        """
             Список из названий камней, которые купили как минимум двое из
             списка 5 клиентов, потративших наибольшую сумму за весь период, и
             данный клиент является одним из этих покупателей.
         """
-        instance_gems = set([deal.item.name for deal in self.deals.all()])
+        self_gems = set(
+            [deal.item.name for deal in self.deals.select_related('item')])
 
-        top_clients = Client.get_top_clients()
+        top_clients = Client.get_top_clients().prefetch_related('deals')
 
         for client in top_clients:
-            client_gems = set([deal.item.name for deal in self.deals.all()])
+            client_gems = set(
+                [deal.item.name for deal in client.deals.select_related(
+                    'item')])
 
-            common_stones = tuple(client_gems & instance_gems)
+            common_stones = tuple(client_gems & self_gems)
 
             if len(common_stones) > 0:
                 return common_stones
-
-        return None

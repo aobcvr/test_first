@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 
 class ClientSerializer(serializers.ModelSerializer):
-    gems = serializers.ReadOnlyField(source='get_gems',)
+    gems = serializers.CharField(source='get_gems',)
 
     class Meta:
         model = Client
