@@ -3,7 +3,21 @@
     "model": "items.item",
     "pk": 1,
     "fields": {
-      "name": "Камень"
+      "name": "Stone default"
+    }
+  },
+  {
+    "model": "items.item",
+    "pk": 2,
+    "fields": {
+      "name": "Stone extra"
+    }
+  },
+  {
+    "model": "items.item",
+    "pk": 3,
+    "fields": {
+      "name": "Stone premium"
     }
   }
 ]

@@ -20,7 +20,6 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -43,8 +42,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
-.hypothesis/
+*,cover
 
 # Translations
 *.mo
@@ -52,14 +50,6 @@ coverage.xml
 
 # Django stuff:
 *.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -67,56 +57,11 @@ docs/_build/
 # PyBuilder
 target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Docker
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+docker/docker-compose.prod.yml
 
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# dotenv
-.env
-
-# virtualenv
-.venv
-venv/
-ENV/
-# .vscode
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-
-.DS_Store
-*.sqlite3
-media/
-*.pyc
-*.db
-*.pid
-
-# Editor
+# JetBrains
 .idea/
-
-# Secrets
-.envs/
-!.envs/.example
-
-# Ignore Django Migrations in Development if you are working on team
-
-# Only for Development only
-# **/migrations/**
-# !**/migrations
-# !**/migrations/__init__.py

@@ -1,10 +1,11 @@
-from clients.models import Client
 from rest_framework import serializers
+
+from clients.models import Client
 
 
 class ClientSerializer(serializers.ModelSerializer):
-    gems = serializers.ReadOnlyField(source='get_gems',)
+    items = serializers.ReadOnlyField(source='get_items', )
 
     class Meta:
         model = Client
-        fields = ('username', 'spent_money', 'gems',)
+        fields = ('username', 'spent_money', 'items',)

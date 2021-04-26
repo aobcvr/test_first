@@ -1,46 +1,74 @@
 [
   {
     "model": "deals.deal",
-    "pk": "694a1d5e-45ca-44d5-962d-fc74d2b3ca96",
+    "pk": "19196ffe-c925-4008-8c53-bd36f7b5115c",
     "fields": {
-      "customer": 2,
-      "item": 1,
+      "customer": 1,
+      "item": 2,
       "quantity": 1,
-      "total": 13,
-      "date": "2021-02-10T13:33:03.110Z"
+      "total_currency": "RUB",
+      "total": "300.00",
+      "date": "2021-04-26T08:07:53.728Z"
     }
   },
   {
     "model": "deals.deal",
-    "pk": "93189396-4f9f-4591-9bb7-a23c754cb30f",
-    "fields": {
-      "customer": 3,
-      "item": 1,
-      "quantity": 3,
-      "total": 131,
-      "date": "2021-02-10T13:32:50.464Z"
-    }
-  },
-  {
-    "model": "deals.deal",
-    "pk": "a0ae0b7b-abc4-4feb-aa19-f15911e19cd1",
+    "pk": "3214f942-0cbf-4421-82dc-5eba795e6d45",
     "fields": {
       "customer": 3,
       "item": 1,
       "quantity": 1,
-      "total": 13113,
-      "date": "2021-02-10T13:32:24.892Z"
+      "total_currency": "RUB",
+      "total": "1200.00",
+      "date": "2021-04-26T08:03:56.094Z"
     }
   },
   {
     "model": "deals.deal",
-    "pk": "da3b1d8e-a2b3-4a8a-a7c0-5bfe76614ab8",
+    "pk": "7bf3caaf-ff48-43d9-97b5-8ecdf58aa061",
     "fields": {
-      "customer": 2,
+      "customer": 1,
+      "item": 3,
+      "quantity": 1,
+      "total_currency": "USD",
+      "total": "450.00",
+      "date": "2021-04-26T08:08:39.345Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "c17da0b5-96e0-4721-8741-482d46fc0832",
+    "fields": {
+      "customer": 3,
+      "item": 2,
+      "quantity": 1,
+      "total_currency": "USD",
+      "total": "170.00",
+      "date": "2021-04-26T06:14:59.369Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "cedd8872-83dd-49d2-aeff-5469f0cd98f6",
+    "fields": {
+      "customer": 3,
       "item": 1,
       "quantity": 1,
-      "total": 131,
-      "date": "2021-02-10T13:32:38.208Z"
+      "total_currency": "USD",
+      "total": "245.00",
+      "date": "2021-04-26T08:00:01.271Z"
+    }
+  },
+  {
+    "model": "deals.deal",
+    "pk": "d79f0eb0-300a-4cdd-88bf-7063f6c84ba2",
+    "fields": {
+      "customer": 1,
+      "item": 1,
+      "quantity": 1,
+      "total_currency": "USD",
+      "total": "300.00",
+      "date": "2021-04-26T06:15:08.831Z"
     }
   }
 ]

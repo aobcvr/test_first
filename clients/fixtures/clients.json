@@ -1,9 +1,29 @@
 [
   {
     "model": "clients.client",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$vqZlYAUgAue8$4iAqOS0EqYr+ENln7F77ohLmlNn4E77IGj6QZQemHVE=",
+      "last_login": "2021-04-26T06:56:31Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "email": "root@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-04-26T06:04:11Z",
+      "username": "Elon",
+      "spent_money_currency": "USD",
+      "spent_money": "131.00",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "clients.client",
     "pk": 2,
     "fields": {
-      "password": "pbkdf2_sha256$150000$dwbZjsD8NFRX$Rsjn/qbGgg1wI2l+Tqzk8ejN+R/x6cU245+Pvf76TeU=",
+      "password": "pbkdf2_sha256$150000$T6mfwl3PF5BK$vPW5bvgXVH4BC4DwORjThLj1XXnNQ35z0y1fxmHyE2E=",
       "last_login": null,
       "is_superuser": false,
       "first_name": "",
@@ -11,9 +31,10 @@
       "email": "",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2021-02-10T12:10:04Z",
-      "username": "John Brown",
-      "spent_money": 31313,
+      "date_joined": "2021-04-26T06:14:17Z",
+      "username": "John",
+      "spent_money_currency": "USD",
+      "spent_money": "31323.00",
       "groups": [],
       "user_permissions": []
     }
@@ -22,7 +43,7 @@
     "model": "clients.client",
     "pk": 3,
     "fields": {
-      "password": "pbkdf2_sha256$150000$2SlqodMfKWMH$adUHroTtKqDpZz53oIcyjMZSP2P9fluAa/r+X9d7A9I=",
+      "password": "pbkdf2_sha256$150000$eXChELFLrIma$w8drr9aIIYXlfBp8o8OOpUGA8ERSXbiAPFKAM9OvJJw=",
       "last_login": null,
       "is_superuser": false,
       "first_name": "",
@@ -30,28 +51,10 @@
       "email": "",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2021-02-10T13:30:43Z",
-      "username": "Beach Jo",
-      "spent_money": 3131,
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "clients.client",
-    "pk": 4,
-    "fields": {
-      "password": "pbkdf2_sha256$150000$LtTnchvGzoOV$ScKuskJ3UiW19Hfs0N6hw0jFuEHucE61bGMA/bb48wc=",
-      "last_login": null,
-      "is_superuser": false,
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2021-02-10T13:31:05.448Z",
-      "username": "Nick John",
-      "spent_money": 0,
+      "date_joined": "2021-04-26T06:14:27Z",
+      "username": "Steve",
+      "spent_money_currency": "USD",
+      "spent_money": "1313.00",
       "groups": [],
       "user_permissions": []
     }

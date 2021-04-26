@@ -4,7 +4,11 @@ from clients.models import Client
 
 
 class TestFileUpload(APITestCase):
-    fixtures = ['clients.json', 'items.json', 'deals.json', ]
+    fixtures = [
+        "clients.json",
+        "items.json",
+        "deals.json",
+    ]
 
-    def test_get_gems(self):
-        self.assertEqual(('Камень',), Client.objects.first().get_gems)
+    def test_gems(self):
+        self.assertEqual(("Камень",), Client.objects.first().gems)

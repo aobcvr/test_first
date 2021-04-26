@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  django:
+    stdin_open: true
+    tty: true
+    read_only: false
+    command: sh
+    entrypoint: ./entrypoint.sh
+    build:
+      context: ./
+      dockerfile: ./dev.Dockerfile
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.envs/.local/django.env
+      - ./.envs/.local/db.env
+    volumes:
+      - ./:/usr/src/app/test_first:rw
+    depends_on:
+      - postrgesql
+      - redis
+
+  postrgesql:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=dev_user
+      - POSTGRES_PASSWORD=dev_password
+      - POSTGRES_DB=test_first
+    ports:
+      - 5432:5432
+
+  redis:
+    image: redis:latest
+    ports:
+      - '127.0.0.1:6379:6379'
+    volumes:
+      - 'redis_data:/data'
+
+volumes:
+  postgres_data:
+  redis_data:
